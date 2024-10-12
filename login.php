@@ -39,8 +39,7 @@
         }
     }
     ?>
-    
-    <!-- เปิดฟอร์มที่หายไป -->
+
     <form action="login.php" method="post">
       <h1>เข้าสู่ระบบ</h1>
 
@@ -61,7 +60,7 @@
       <div class="action-buttons">
         <button type="submit" name="login" class="login-button btn btn-primary" id="loginBtn">ล็อกอิน</button>
       </div>
-    </form> <!-- ปิดฟอร์มที่ถูกต้อง -->
+    </form> 
 
     <div class="google-login">
       <button class="google-button" id="googleLoginBtn">
