@@ -1,4 +1,4 @@
-/* กำหนดสไตล์พื้นฐานสำหรับ body */
+
 body {
     margin: 0;
     padding: 0;
@@ -6,7 +6,6 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
-/* สไตล์สำหรับส่วน header */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -41,7 +40,6 @@ body {
     height: 40px;
 }
 
-/* สไตล์สำหรับ container ของหน้า */
 .container {
     max-width: 700px;
     margin: 0 auto;
@@ -51,7 +49,6 @@ body {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* สไตล์สำหรับหัวข้อ */
 h1 {
     text-align: center;
     font-size: 28px;
@@ -59,19 +56,16 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* สไตล์สำหรับโปรไฟล์ */
 .profile-card {
     background-color: #E8F4FF;
     padding: 20px;
     border-radius: 15px;
     display: flex;
-    /* เปลี่ยนจาก flex-direction: column; เป็น row เพื่อให้รูปโปรไฟล์อยู่ซ้ายและข้อมูลอยู่ขวา */
     flex-direction: row;
     align-items: flex-start;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-/* จัดรูปโปรไฟล์ไว้ซ้ายสุด และเพิ่มระยะห่างจากข้อมูล */
 .profile-picture {
     margin-right: 30px;
     display: flex;
@@ -102,7 +96,6 @@ h1 {
     background-color: #3498db;
 }
 
-/* สไตล์สำหรับข้อมูลโปรไฟล์ */
 .profile-info {
     flex-grow: 1;
 }
@@ -136,7 +129,6 @@ h1 {
     background-color: #3498db;
 }
 
-/* สไตล์สำหรับ user-access-info */
 .user-access-info {
     width: 100%;
     margin-top: 20px;
@@ -157,7 +149,6 @@ h1 {
     background-color: #2980b9;
 }
 
-/* เพิ่มความสวยงามให้กับ input */
 input[type="text"], input[type="number"], input[type="date"] {
     width: 100%;
     padding: 8px;
@@ -166,7 +157,6 @@ input[type="text"], input[type="number"], input[type="date"] {
     margin-top: 5px;
 }
 
-/* สไตล์สำหรับปุ่มอัปโหลดรูปภาพใหม่ */
 .upload-btn {
     display: flex;
     align-items: center;
@@ -183,7 +173,6 @@ input[type="text"], input[type="number"], input[type="date"] {
     background-color: #3498db;
 }
 
-/* สำหรับ icon ภายในปุ่ม */
 .upload-btn img {
     width: 18px;
     height: 18px;

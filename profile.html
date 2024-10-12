@@ -6,7 +6,6 @@
     <title>โปรไฟล์ของฉัน</title>
     <link rel="stylesheet" href="profile.css">
     <script>
-        // ฟังก์ชันดึงข้อมูลจาก localStorage ถ้ามี หรือใช้ค่าเริ่มต้น
         function loadProfile() {
             const username = localStorage.getItem('username') || 'สุขกาย สุขภาพดี';
             const age = localStorage.getItem('age') || '28';
@@ -14,7 +13,6 @@
             const weight = localStorage.getItem('weight') || '68';
             const height = localStorage.getItem('height') || '178';
 
-            // แสดงผลข้อมูลในหน้าโปรไฟล์
             document.getElementById('display-username').textContent = username;
             document.getElementById('display-age').textContent = age;
             document.getElementById('display-dob').textContent = dob;
@@ -43,7 +41,6 @@
         <div class="profile-card">
             <div class="profile-picture">
                 <img src="profile.png" alt="Profile Picture">
-                <!-- ทำให้ปุ่มเปลี่ยนรูปโปรไฟล์ลิ้งไปหน้า edit-profile.html -->
                 <a href="edit-profile.html"><button class="edit-btn">เปลี่ยนรูปโปรไฟล์</button></a>
             </div>
 

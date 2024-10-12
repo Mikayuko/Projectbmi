@@ -6,27 +6,22 @@
     <title>แก้ไขโปรไฟล์</title>
     <link rel="stylesheet" href="profile.css">
     <script>
-        // ฟังก์ชันบันทึกข้อมูลไปยัง localStorage
         function saveProfile() {
-            // เก็บข้อมูลจาก input fields
             const username = document.getElementById('username').value;
             const age = document.getElementById('age').value;
             const dob = document.getElementById('dob').value;
             const weight = document.getElementById('weight').value;
             const height = document.getElementById('height').value;
 
-            // บันทึกข้อมูลใน localStorage
             localStorage.setItem('username', username);
             localStorage.setItem('age', age);
             localStorage.setItem('dob', dob);
             localStorage.setItem('weight', weight);
             localStorage.setItem('height', height);
 
-            // ลิงก์ไปยังหน้าโปรไฟล์หลังจากบันทึกข้อมูล
             window.location.href = 'profile.html';
         }
 
-        // ฟังก์ชันโหลดข้อมูลในหน้าแก้ไขโปรไฟล์จาก localStorage
         function loadEditProfile() {
             const username = localStorage.getItem('username') || 'สุขกาย สุขภาพดี';
             const age = localStorage.getItem('age') || '28';
@@ -34,7 +29,6 @@
             const weight = localStorage.getItem('weight') || '68';
             const height = localStorage.getItem('height') || '178';
 
-            // ตั้งค่าข้อมูลใน input fields
             document.getElementById('username').value = username;
             document.getElementById('age').value = age;
             document.getElementById('dob').value = dob;
@@ -43,7 +37,7 @@
         }
     </script>
 </head>
-<body onload="loadEditProfile()"> <!-- โหลดข้อมูลเมื่อเปิดหน้า -->
+<body onload="loadEditProfile()"> 
     <header class="main-header">
         <div class="icon-container">
             <a href="profile.html"><img src="User.png" alt="กลับไปยังหน้าโปรไฟล์" class="header-icon"></a>
