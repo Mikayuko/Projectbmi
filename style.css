@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    background-color: #f0f8ff;
+}
+
+.forgot-container {
+    background-color: transparent;
+    padding: 20px;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #B3E5FC;
+    color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0066FF;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+.success-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.success-icon {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.back-to-login {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    text-decoration: none;
+    background-color: white;
+    color: #333;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-login:hover {
+    background-color: #369ECE;
+    color: #fff;
+    border-color: #369ECE;
+}
+
+
+header {
+    background-color: #e6f7ff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.User { 
+    height: 30px;
+    position: absolute;
+    right: 20px;
+}
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.success-content {
+    display: flex;
+    align-items: center;
+}
+
+.success-icon {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #B3E5FC;
+    color: #000000;
+}
+
+button[type="button"] {
+    background-color: #F3F8FE;
+    color: #369ECE;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+    
+header {
+    background-color: #e6f7ff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.User {
+    height: 30px;
+    position: absolute;
+    right: 20px;
+}
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.success-content {
+    display: flex;
+    align-items: center;
+}
+
+.success-icon {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-content {
+    text-align: left;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+ 
+.form-buttons button {
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: #B3E5FC;
+    color: #000000;
+}
+
+button[type="button"] {
+    background-color: #F3F8FE;
+    color: #369ECE;
+}
+
+button:hover {
+    opacity: 0.9;
+}
