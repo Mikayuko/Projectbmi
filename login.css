@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Prompt", sans-serif;
+  }
+  
+  .navbar {
+    padding: 10px;
+    background: #E6F8FF;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .logoimg2 {
+    position: absolute;
+    right: 20px;
+  }
+  
+  .bmilogo {
+    width: 60px;
+  }
+  
+  .user {
+    width: 50px;
+  }
+  
+  .signin {
+    background: #F3F8FE;
+    text-align: center;
+    padding: 40px;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding-right: 21%;
+    font-weight: 300;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .input-with-icon {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  .input-with-icon input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 18px;
+    background-color: #C0EAFA;
+  }
+  
+  .google-login {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .google-button {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .google-button:hover {
+    background-color: #ddd;
+  }
+  
+  .google-icon {
+    width: 20px;
+    margin-right: 10px;
+  }
+  
+  .forgot-password {
+    font-size: 16px;
+    padding : 20px;
+    color: black;
+    text-align: right;
+    margin-right: 10px;
+  }
+  
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .login-button {
+    background-color: #add8e6;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 36px;
+  }
+  
+  .login-button:hover {
+    background-color: #87ceeb;
+  }
+  
+  .register {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .register-link {
+    color: #4A90E2;
+    text-decoration: none;
+  }
+  
