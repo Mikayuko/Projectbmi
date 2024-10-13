@@ -12,12 +12,12 @@
             const dob = localStorage.getItem('dob') || '13 สิงหาคม 2539';
             const weight = localStorage.getItem('weight') || '68';
             const height = localStorage.getItem('height') || '178';
-
-            document.getElementById('display-username').textContent = username;
+            const profileImage = localStorage.getItem('profileImage') || 'profile.png';
             document.getElementById('display-age').textContent = age;
             document.getElementById('display-dob').textContent = dob;
             document.getElementById('display-weight').textContent = weight;
             document.getElementById('display-height').textContent = height;
+            document.getElementById('profile-img').src = profileImage;
         }
     </script>
 </head>
@@ -40,7 +40,7 @@
 
         <div class="profile-card">
             <div class="profile-picture">
-                <img src="profile.png" alt="Profile Picture">
+                <img src="profile.png" alt="Profile Picture" id="profile-img">
                 <a href="edit-profile.html"><button class="edit-btn">เปลี่ยนรูปโปรไฟล์</button></a>
             </div>
 
