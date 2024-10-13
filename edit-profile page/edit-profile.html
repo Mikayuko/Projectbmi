@@ -28,12 +28,14 @@
             const dob = localStorage.getItem('dob') || '1996-08-13';
             const weight = localStorage.getItem('weight') || '68';
             const height = localStorage.getItem('height') || '178';
+            const profileImage = localStorage.getItem('profileImage') || 'profile.png';
 
             document.getElementById('username').value = username;
             document.getElementById('age').value = age;
             document.getElementById('dob').value = dob;
             document.getElementById('weight').value = weight;
             document.getElementById('height').value = height;
+            document.getElementById('profile-img').src = profileImage;
         }
     </script>
 </head>
@@ -55,8 +57,8 @@
 
         <div class="profile-card">
             <div class="profile-picture">
-                <img src="profile.png" alt="Profile Picture">
-                <button class="edit-btn">อัปโหลดรูปภาพใหม่</button>
+                <img src="profile.png" alt="Profile Picture" id="profile-img">
+                <a href="upload.html"><button class="edit-btn">อัปโหลดรูปภาพใหม่</button></a>
             </div>
 
             <div class="profile-info">
@@ -68,7 +70,7 @@
             </div>
 
             <div class="user-access-info">
-                <button class="change-password-btn" onclick="saveProfile()">บันทึกข้อมูล</button> <!-- ปุ่มบันทึกข้อมูล -->
+                <button class="change-password-btn" onclick="saveProfile()">บันทึกข้อมูล</button>
             </div>
         </div>
     </div>
