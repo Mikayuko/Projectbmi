@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรไฟล์ของฉัน</title>
+    <link rel="stylesheet" href="profile.css">
+    <script>
+        function loadProfile() {
+            const username = localStorage.getItem('username') || 'สุขกาย สุขภาพดี';
+            const age = localStorage.getItem('age') || '28';
+            const dob = localStorage.getItem('dob') || '13 สิงหาคม 2539';
+            const weight = localStorage.getItem('weight') || '68';
+            const height = localStorage.getItem('height') || '178';
+
+            document.getElementById('display-username').textContent = username;
+            document.getElementById('display-age').textContent = age;
+            document.getElementById('display-dob').textContent = dob;
+            document.getElementById('display-weight').textContent = weight;
+            document.getElementById('display-height').textContent = height;
+        }
+    </script>
+</head>
+<body onload="loadProfile()">
+    <header class="main-header">
+        <div class="icon-container">
+            <img src="Edit.png" alt="Edit Icon" class="header-icon">
+        </div>
+        <div class="logo-container">
+            <img src="Logo.png" alt="BMI Logo" class="logo">
+        </div>
+        <div class="icon-container">
+            <img src="logout.png" alt="Logout Icon" class="header-icon">
+            <img src="User.png" alt="User Icon" class="header-icon">
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>โปรไฟล์ของฉัน</h1>
+
+        <div class="profile-card">
+            <div class="profile-picture">
+                <img src="profile.png" alt="Profile Picture">
+                <a href="edit-profile.html"><button class="edit-btn">เปลี่ยนรูปโปรไฟล์</button></a>
+            </div>
+
+            <div class="profile-info">
+                <p><strong>Username :</strong> <span id="display-username"></span> 
+                    <a href="edit-profile.html"><button class="edit-info-btn">แก้ไขโปรไฟล์</button></a>
+                </p>
+                <p><strong>อายุ:</strong> <span id="display-age"></span> ปี</p>
+                <p><strong>วันเดือนปีเกิด:</strong> <span id="display-dob"></span></p>
+                <p><strong>น้ำหนัก:</strong> <span id="display-weight"></span> กิโลกรัม</p>
+                <p><strong>ส่วนสูง:</strong> <span id="display-height"></span> เซนติเมตร</p>
+            </div>
+
+            <div class="user-access-info">
+                <p><strong>ข้อมูลการเข้าใช้งาน</strong></p>
+                <p><strong>Gmail :</strong> SukkaiSukkapapdee@gmail.com</p>
+                <p><strong>Password :</strong> ********** 
+                   <a href="Reset Password.html"><button class="change-password-btn">เปลี่ยนรหัสผ่าน</button></a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
