@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อัพโหลดรูปโปรไฟล์</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="icon-container">
+            <a href="profile.html"><img src="User.png" alt="กลับไปยังหน้าโปรไฟล์" class="header-icon"></a>
+        </div>
+        <div class="logo-container">
+            <img src="Logo.png" alt="BMI Logo" class="logo">
+        </div>
+        <div class="icon-container">
+            <img src="logout.png" alt="Logout Icon" class="header-icon">
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>อัพโหลดรูปโปรไฟล์ของคุณ</h1>
+        <div class="upload-box">
+            <div class="upload-area">
+                <img src="upload-icon.png" alt="Upload Icon" class="upload-icon" id="preview-image">
+                <p>ลากและวางรูปภาพที่นี่</p>
+                <p>หรือ</p>
+                <input type="file" id="file-upload" accept=".png, .jpg" style="display: none;" onchange="handleFileUpload()">
+                <button class="upload-btn" onclick="document.getElementById('file-upload').click()">เรียกดูไฟล์</button>
+            </div>
+            <p class="file-requirements">*รองรับไฟล์ .png .jpg</p>
+        </div>
+
+        <div class="button-group">
+            <button class="cancel-btn" onclick="window.location.href='profile.html'">ยกเลิก</button>
+            <button class="save-btn" onclick="saveProfileImage()">บันทึก</button>
+        </div>
+    </div>
+
+    <script>
+        let selectedImageDataUrl = '';
+
+        function handleFileUpload() {
+            const fileInput = document.getElementById('file-upload');
+            const selectedFile = fileInput.files[0];
+            
+            if (selectedFile) {
+                const reader = new FileReader();
+
+                reader.onload = function(event) {
+                    selectedImageDataUrl = event.target.result;
+                    document.getElementById('preview-image').src = selectedImageDataUrl;
+                };
+
+                reader.readAsDataURL(selectedFile);
+            }
+        }
+
+        function saveProfileImage() {
+            if (selectedImageDataUrl) {
+                localStorage.setItem('profileImage', selectedImageDataUrl);
+                window.location.href = 'profile.html';
+            } else {
+                alert('กรุณาเลือกรูปภาพก่อนบันทึก');
+            }
+        }
+    </script>
+</body>
+</html>
